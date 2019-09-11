@@ -1,6 +1,6 @@
 # WADBPWN 
 
-#### Hack a random android device with 100% guarantee to succeed within 1 second from  you launching the script.
+#### Hack a random android device with 100% guarantee to succeed within 1 second.
 
 ##### The easiest methods that are the most effective methods
 
