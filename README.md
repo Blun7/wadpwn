@@ -2,8 +2,6 @@
 
 #### Hack a random android device with 100% guarantee to succeed within 1 second.
 
-##### The easiest methods that are the most effective methods
-
 ![Screenshot](https://nr1.nu/archive/wadbpwn/wadbpwn.gif)
 
 ### Get Started On Linux/MacOSX
